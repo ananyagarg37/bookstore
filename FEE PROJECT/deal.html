@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width , initial-scale=1.0">
+
+    <!---title-->
+    <title> LUNA : DIGITAL BOOK STORE</title>
+
+    <!--CSS LINK-->
+    <link rel="stylesheet" href="shopping.css">
+
+    <!--font awseome library link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--swiper demons link-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+     
+
+    <!-- apple link -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
+    </head>
+    <body>
+        <!-- header section -->
+        <header class="header">
+
+            <div class="header-1">
+        
+                <a href="#" class="logo"> <i class="fas fa-book"></i> LUNA</a>
+        
+                <form action="" class="search-form">
+                    <input type="search" name="" placeholder="search here..." id="search-box">
+                    <label for="search-box" class="fas fa-search"></label>
+                </form>
+        
+                <div class="icons">
+                    <div id="search-btn" class="fas fa-search"></div>
+                    <a  id="cart-btn" class="fas fa-shopping-cart"></a>
+                    <div id="login-btn" class="fas fa-user"></div>
+                    <div id = "wishlist-btn " class="fas fa-heart"></div>
+                </div>
+        
+            </div>
+            <div class="header-2">
+                <nav class="navbar">
+                    <a href="./mainpage.html">Home</a>
+                    
+                   
+                    <a href="#reviews">Reviews</a>
+                    <a href="./blog.html">Blog</a>
+                    <div class="dropdown"> <a href="#category">Category</a>
+                        <div class="dropdown-content"> <a href="./motivation.html">motivation</a> <a href="./romance.html">romance</a> <a href="./horror.html">horror
+                        </a>  <a href="./mystry.html">Mystery</a><a href="./fantasy.html">fantasy</a> </div>
+                    </div>
+                </nav>
+            </div>
+        
+        </header>
+
+        <!-- bottom navigation bar -->
+        <nav class="bottom-navbar">
+            <a href="#home" class="fas fa-home"></a>
+            <a href="#feature" class="fas fa-list"></a>
+            <a href="#arrivals" class="fas fa-tags"></a>
+            <a href="#reviews" class="fas fa-comments"></a>
+            <a href="#blog" class="fas fa-blog"></a>
+        </nav>
+
+        <!-- login form -->
+        <div class="login-form-container">
+
+            <div id="close-login-btn" class="fas fa-times"></div>
+        
+            <form action="">
+                <h3>sign in</h3>
+                <span>username</span>
+                <input type="email" name="" class="box" placeholder="enter your email" id="">
+                <span>password</span>
+                <input type="password" name="" class="box" placeholder="enter your password" id="">
+                <div class="checkbox">
+                    <input type="checkbox" name="" id="remember-me">
+                    <label for="remember-me"> remember me</label>
+                </div>
+                <input type="submit" value="sign in" class="btn">
+                <p>forget password ? <a href="#">click here</a></p>
+                <p>don't have an account ? <a href="#">create one</a></p>
+            </form>
+         </div>
+         <main>
+            <ul class="book-list">
+                <li class="book-item">
+                    <img src="book43.jpg" alt="Book 1">
+                    <p class="price">$4.00</p>
+                   
+                    <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+                </li>
+                <li class="book-item">
+                    <img src="book42.jpg" alt="Book 2">
+                    <p class="price">$5.00</p>
+                    <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+                </li>
+                <li class="book-item">
+                    <img src="book4.jpg" alt="Book 3">
+                    <p class="price">$6.00</p>
+                    <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+                </li>
+                <li class="book-item">
+                    <img src="book41.jpg" alt="Book 4">
+                    <p class="price">$7.00</p>
+                    <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+                </li>
+              
+             
+                
+     
+            </ul>
+        </main>
+        <section class="footer">
+
+            <div class="box-container">
+        
+                <div class="box">
+                    <h3>our locations</h3>
+                    <a href="#"> <i class="fas fa-map-marker-alt"></i> india </a>
+                    
+                </div>
+        
+                <div class="box">
+                    <h3>quick links</h3>
+                    <a href="#"> <i class="fas fa-arrow-right"></i> home </a>
+                    <a href="#"> <i class="fas fa-arrow-right"></i> featured </a>
+                    <a href="#"> <i class="fas fa-arrow-right"></i> cart </a>
+                    <a href="#"> <i class="fas fa-arrow-right"></i> payment  </a>
+                    
+                   
+                    
+                </div>
+        
+              
+        
+                <div class="box">
+                    <h3>contact info</h3>
+                    <a href="#"> <i class="fas fa-phone"></i>+91 9864920966 </a>
+                    <a href="#"> <i class="fas fa-phone"></i> +91 8679229783 </a>
+                    <a href="#"> <i class="fas fa-envelope"></i>sambalpoonia0@gmail.com</a>
+                    <a href="#"> <i class="fas fa-envelope"></i> ananyagarg1666@gamil.com </a>
+                    <img src="https://raw.githubusercontent.com/KordePriyanka/Books4MU-Book-Store-Website-/main/image/worldmap.png" class="map" alt="">
+                </div>
+        
+            </div>
+        
+            <div class="share">
+                <a href="https://twitter.com" class="fab fa-twitter"></a>
+                <a href="https://instagram.com" class="fab fa-instagram"></a>
+                 <a href="https://linkedin.com" class="fab fa-linkedin"></a>
+               
+            </div>
+        
+            <div class="credit"> created by <span>ananya,sambal </span>copyright ©2022 all rights reserved! </div>
+        
+        </section>
+        </body>
+</html>
+
+    
+         

@@ -1,0 +1,100 @@
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel="stylesheet" href="styles.css">  
+    <title>Shopping Cart</title>  
+    <style>  
+        body {  
+            font-family: Arial, sans-serif;  
+            background-color: #403b34; /
+            color: rgb(27, 26, 27); 
+            margin: 0;  
+            padding: 20px;  
+        }  
+
+        .cart-container {  
+            max-width: 600px;  
+            margin: 0 auto;  
+            background: #c8bad4; /* Slightly lighter background */  
+            padding: 20px;  
+            border-radius: 8px;  
+            /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);   */
+            -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.37);
+            -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.37);
+            box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.37);
+        }  
+
+        h1 {  
+            text-align: center;  
+        }  
+
+        .cart-item {  
+            display: flex;  
+            align-items: center;  
+            padding: 10px;  
+            border-bottom: 1px solid #1d1c1c;  
+        }  
+
+        .cart-item:last-child {  
+            border-bottom: none; /* Remove the last border */  
+        }  
+
+        .product-image {  
+            width: 50px; /* Set the image width */  
+            height: auto; /* Maintain aspect ratio */  
+            margin-right: 10px; /* Space between image and product name */  
+        }  
+
+        .product-name {  
+            flex: 1;  
+            padding: 0 10px;  
+        }  
+
+        .product-price {  
+            width: 100px;  
+        }  
+
+        .quantity-control {  
+            display: flex;  
+            align-items: center;  
+        }  
+
+        .quantity-control input {  
+            width: 30px;  
+            text-align: center;  
+            margin: 0 5px;  
+        }  
+
+        button {  
+            display: block;  
+            width: 100%;  
+            padding: 10px;  
+            background-color: #35054a;  
+            color: white;  
+            border: none;  
+            border-radius: 5px;  
+            cursor: pointer;  
+            margin-top: 20px;  
+        }  
+
+        button:hover {  
+            background-color: #795788;  
+        }  
+    </style>  
+</head>  
+<body>  
+    <div class="cart-container">  
+        <h1>Cart</h1>  
+        <div id="cart-items">  
+            <!-- Cart items will be dynamically inserted here -->  
+             
+        </div>  
+        <div class="total-price">  
+            <h2>Total: $<span id="total">0.00</span></h2>  
+        </div>  
+        <button id="checkout-button">Checkout</button>  
+    </div>  
+
+    <script src="cart.js"></script>  
+</body>  
+</html>
